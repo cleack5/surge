@@ -1,0 +1,19 @@
+#!name=Skip Proxy Lists
+#!desc=跳过部分应用的代理检测
+
+[General]
+
+## skip-proxy 指定哪些流量不被 proxy server 所代理
+skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,*.audi-connect.cn
+
+## www.baidu.com：百度
+## yunbusiness.ccb.com：建行生活
+## wxh.wo.cn：沃小号
+## gate.lagou.com：拉勾招聘
+## www.abchina.com.cn：中国农业银行
+## www.shanbay.com 扇贝单词消息中心
+## www.google.com 成都公积金
+## login-service.mobile-bank.psbc.com,mobile-bank.psbc.com：中国邮政储蓄银行
+
+## bypass-tun 指定哪些数据流量不送 TUN interface 处理
+## bypass-tun = %APPEND% 0.0.0.0/8, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
